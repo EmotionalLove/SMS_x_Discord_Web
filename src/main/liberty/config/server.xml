@@ -7,14 +7,8 @@
     </featureManager>
 
     <ssl id="defaultSSLConfig" keyStoreRef="cacertKeyStore"/>
-    <!--    <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" />-->
     <keyStore id="cacertKeyStore" location="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/cacerts"
               password="changeit"/>
-
-    <!--    <keyStore id="defaultKeyStore"-->
-    <!--              type="JKS" password="{xor}CigKDzc2Dzc2"-->
-    <!--              pollingRate="5s"-->
-    <!--              updateTrigger="polled"/>-->
 
     <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
                   id="defaultHttpEndpoint" host="*"/>
